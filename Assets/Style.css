@@ -47,6 +47,17 @@ nav ul li a .dropdown-menu {
 .move {
     transform: translateX(-130px);
 }
+.caption {
+    position: absolute;
+    bottom: 45%;
+    right: 75%;
+    z-index: 100;
+}
+.caption span {
+    color: #F2A900;
+    padding: 2px;
+    background-color: #272727;
+}
 .carousel img:nth-child(1) {
     position: absolute;
 }
@@ -126,15 +137,48 @@ nav ul li a .dropdown-menu {
 .news .news-content {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    height: 240px;
+    max-width: 315px;
+    height: 137px;
     color: #ddd;
     padding: 0 15px 20px;
     position: absolute;
+    margin-top: 72px;
     background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #101010 100%, rgba(16, 16, 16, 0.5) 100%);
+}
+.news .news-content .categories span {
+    font-size: 13px;
+    padding: 2px 4px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.news .news-content .date-time p {
+    margin: 0 1rem 0 0;
+}
+.news .news-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .news .news-card img {
     width: 100%;
+}
+.btn-news {
+    background-color: #F2A900;
+    color: #272727;
+    font-weight: 700;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: 0.2s ease-in;
+}
+.btn-news:hover {
+    background-color: #cc8f02;
+}
+.btn-news i {
+    font-size: 12px;
 }
 
 /*aside*/
@@ -144,4 +188,48 @@ aside h3 {
     color: #F2A900;
     font-size: 14px;
     font-weight: 700;
+}
+aside .aside-content {
+    background-color: #272727;
+    padding: 10px;
+    color: #A5A5A5;
+    border-left: 3px solid #4e4e4e;
+    transition: 0.2s ease-in;
+}
+aside .aside-content:hover {
+    background-color: #202020;
+    border-left: 3px solid #3b3b3b;
+}
+aside .aside-content div:nth-child(1) {
+    margin: 3px 0;
+}
+aside .aside-content div:nth-child(1) span{
+    padding: 0 4px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+aside .aside-content h5 {
+    font-weight: 700;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    width: 175px;
+    height: 40px;
+}
+aside .aside-content .date-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+}
+aside .card-aside img {
+    width: 165px;
+}
+.card-aside figure {
+    width: unset;
+    overflow: hidden;
+    margin: 0 auto;
 }
