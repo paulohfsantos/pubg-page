@@ -38,8 +38,8 @@ nav ul li a.active {
 nav ul li a .dropdown-menu {
     background-color: #313131 !important;
 }
-.lang span {
-    color: #878787;
+.lang i {
+    color: #fff;
 }
 
 /* main */
@@ -232,4 +232,68 @@ aside .card-aside img {
     width: unset;
     overflow: hidden;
     margin: 0 auto;
+}
+
+/*Leagues section*/
+
+.leagues {
+    background-color: #272727;
+}
+.leagues h1 {
+    font-weight: 700;
+    color: #E5E5E5;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+.leagues span {
+    color: #878787;
+    margin: 0 5px;
+}
+.leagues span.active {
+    color: #F2A900;
+    border-bottom: 2px solid #F2A900;
+}
+.leagues .card-league img {
+    width: 104%;
+}
+.leagues .golds span {
+    margin: 0;
+}
+.leagues .golds span:nth-child(1) {
+    padding: 10px;
+    background: url(/Img/cards-league/gold.png);
+    color: #202020;
+    width: 50%;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.leagues .golds span:nth-child(2) {
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    color: #F2A900;
+}
+.leagues .score {
+    background-color: #272727;
+    padding-bottom: .5rem;
+    border-bottom: 4px solid #F2A900;
+}
+.leagues .score .border-right {
+    border-right: 2px solid #202020;
+}
+.leagues .score span:nth-child(1) {
+    font-size: 14px;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.leagues .score span:nth-child(2) {
+    color: #F2A900;
+    font-weight: 700;
 }
