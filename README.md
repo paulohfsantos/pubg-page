@@ -4,4 +4,4 @@
 
 ###### `git clone` https://github.com/paulohfsantos/pubg-page.git
 
-## Obrigado
+## Obrigado!
